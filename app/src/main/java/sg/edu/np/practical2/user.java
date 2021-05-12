@@ -4,6 +4,7 @@ public class user {
     public String name, desc;
     public int id;
     public boolean followed;
+    public int age;
 
     public String getName() {
         return name;
@@ -29,6 +30,14 @@ public class user {
         this.id = id;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.id = age;
+    }
+
     public boolean isFollowed() {
         return followed;
     }
@@ -37,12 +46,15 @@ public class user {
         this.followed = followed;
     }
 
+
+
     public user(){};
 
-    public user(String name, String desc, int id, boolean followed) {
+    public user(String name, String desc, int id, boolean followed, int age) {
         this.name = name;
         this.desc = desc;
         this.id = id;
         this.followed = followed;
+        this.age = age;
     }
 }
